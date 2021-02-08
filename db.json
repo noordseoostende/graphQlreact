@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Geraldine",
+      "age": 22,
+      "married": true,
+      "average": 4.5,
+      "status": "active"
+    },
+    {
+      "id": 2,
+      "name": "Leonardo",
+      "age": 25,
+      "married": true,
+      "average": 4.5,
+      "status": "not_active"
+    },
+    {
+      "id": 3,
+      "name": "Fred",
+      "age": 21,
+      "married": true,
+      "average": 9.5,
+      "status": "active"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
