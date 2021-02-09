@@ -25,11 +25,34 @@
       "status": "active"
     }
   ],
-  "comments": [
+  "posts": [
     {
       "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "title": "Sommige toevoegingen",
+      "content": "Het wordt een feest",
+      "author": 1,
+      "picture": 1
+    },
+    {
+      "id": 2,
+      "title": "Sommige toevoegingen 19",
+      "content": "Het wordt een feest",
+      "author": 1,
+      "picture": 1
+    },
+    {
+      "id": 3,
+      "title": "Sommige toevoegingen 20",
+      "content": "Het wordt een feest",
+      "author": 1,
+      "picture": 1
+    },
+    {
+      "id": 4,
+      "title": "Sommige toevoegingen 21",
+      "content": "Het wordt een feest",
+      "author": 2,
+      "picture": 2
     }
   ],
   "profile": {
