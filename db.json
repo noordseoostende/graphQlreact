@@ -57,22 +57,22 @@
   ],
   "pictures": [
     {
-    "id": 1,
-    "path": "somepath/images/plant.jpg",
-    "author": 1,
-    "post": 1
-  },
-  {
-    "id": 2,
-    "path": "somepath/images/plant1.jpg",
-    "author": 2,
-    "post": 1
-  },
-  {
-    "id": 3,
-    "path": "somepath/images/plant2.jpg",
-    "author": 1,
-    "post": 2
-  }
-]
+      "id": 1,
+      "path": "somepath/images/plant.jpg",
+      "author": 1,
+      "post": 1
+    },
+    {
+      "id": 2,
+      "path": "somepath/images/plant1.jpg",
+      "author": 2,
+      "post": 1
+    },
+    {
+      "id": 3,
+      "path": "somepath/images/plant2.jpg",
+      "author": 1,
+      "post": 2
+    }
+  ]
 }
