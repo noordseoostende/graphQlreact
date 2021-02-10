@@ -52,13 +52,24 @@ deletePost:async(parent,args,context,info)=>{
       return true
     }
     return false
+},
+deleteAgent:async(parent,args,context,info)=>{
+  const response = await axios.delete(`${db}/users/${args.id}`);
+    if(Object.keys(response.data).length === 0 ){
+      return true
+    }
+    return false
 }
 
 }
 const Post = {
   author:async(parent,args,context,info)=>{
+    try{
     const response = await axios.get(`${db}/users/${parent.author}`);
     return response.data
+  } catch(e){
+    return null
+  }
 },
 picture:async(parent,args,context,info)=>{
 const response = await axios.get(`${db}/pictures/${parent.picture}`);
