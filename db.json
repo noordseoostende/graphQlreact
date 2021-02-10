@@ -1,6 +1,14 @@
 {
   "users": [
     {
+      "id": 1,
+      "name": "Sveta",
+      "age": 23,
+      "married": true,
+      "average": 4.5,
+      "status": "active"
+    },
+    {
       "id": 2,
       "name": "Leonardo",
       "age": 25,
@@ -15,6 +23,13 @@
       "married": true,
       "average": 9.5,
       "status": "active"
+    },
+    {
+      "name": "Liana",
+      "age": 22,
+      "married": true,
+      "average": 0,
+      "id": 4
     }
   ],
   "posts": [

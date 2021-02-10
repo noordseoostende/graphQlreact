@@ -7,11 +7,27 @@ type Query {
 }
 
 type Mutation {
-  createAgent(name:String!,age:Int!,married:Boolean): User!
+  createAgent(data:CreateAgentInput!): User!
   createPost(title:String, content:String!):Post!
   deletePost(id:ID!):Boolean!
   deleteAgent(id:ID!):Boolean!
+  updateAgent(id:ID!,data:InputAgentInput!):User!
   }
+
+input InputAgentInput {
+  name:String,
+  age:Int,
+  married:Boolean,
+  average:Float
+  }
+
+input CreateAgentInput {
+  name:String!,
+  age:Int!,
+  married:Boolean
+}
+
+
 type Picture {
   id: ID!
   path: String!
