@@ -2,7 +2,7 @@
   "users": [
     {
       "id": 1,
-      "name": "Geraldine",
+      "name": "Leoni",
       "age": 22,
       "married": true,
       "average": 4.5,
@@ -55,7 +55,24 @@
       "picture": 2
     }
   ],
-  "profile": {
-    "name": "typicode"
+  "pictures": [
+    {
+    "id": 1,
+    "path": "somepath/images/plant.jpg",
+    "author": 1,
+    "post": 1
+  },
+  {
+    "id": 2,
+    "path": "somepath/images/plant1.jpg",
+    "author": 2,
+    "post": 1
+  },
+  {
+    "id": 3,
+    "path": "somepath/images/plant2.jpg",
+    "author": 1,
+    "post": 2
   }
+]
 }
