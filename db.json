@@ -6,7 +6,7 @@
       "age": 23,
       "married": true,
       "average": 4.5,
-      "status": "active"
+      "status": "not_active"
     },
     {
       "id": 2,
@@ -22,14 +22,7 @@
       "age": 21,
       "married": true,
       "average": 9.5,
-      "status": "active"
-    },
-    {
-      "name": "Liana",
-      "age": 22,
-      "married": true,
-      "average": 0,
-      "id": 4
+      "status": "guest"
     }
   ],
   "posts": [
@@ -60,6 +53,28 @@
       "content": "Het wordt een feest",
       "author": 2,
       "picture": 2
+    },
+    {
+      "title": "Sommige verhalen",
+      "content": "Stop oefening in volgende..1",
+      "author": 1,
+      "picture": 1,
+      "id": 5
+    },
+    {
+      "title": "Sommige verhalen",
+      "content": "Stop oefening in volgende..1",
+      "author": 1,
+      "picture": 1,
+      "id": 6
+    },
+    {
+      "title": "Sommige verhalen",
+      "content": "Stop oefening in volgende..1",
+      "author": 1,
+      "picture": 1,
+      "status": "DRAFT",
+      "id": 7
     }
   ],
   "pictures": [

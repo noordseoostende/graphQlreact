@@ -8,23 +8,37 @@ type Query {
 
 type Mutation {
   createAgent(data:CreateAgentInput!): User!
-  createPost(title:String, content:String!):Post!
+  createPost(title:String, content:String!,status:PostStatus):Post!
   deletePost(id:ID!):Boolean!
   deleteAgent(id:ID!):Boolean!
-  updateAgent(id:ID!,data:InputAgentInput!):User!
+  updateAgent(id:ID!,data:UpdateAgentInput!):User!
   }
 
-input InputAgentInput {
+  enum PostStatus {
+    PUBLISHED
+    DRAFT
+  }
+
+  enum AgentState {
+    active
+    not_active
+    trainee
+    guest
+  }
+
+input UpdateAgentInput {
   name:String,
   age:Int,
   married:Boolean,
   average:Float
+  status:AgentState
   }
 
 input CreateAgentInput {
   name:String!,
   age:Int!,
-  married:Boolean
+  married:Boolean,
+  status:AgentState!
 }
 
 
@@ -41,6 +55,7 @@ type User {
   age: Int
   married: Boolean!
   average: Float
+  status: AgentState!
   posts: [Post!]!
   pictures: [Picture!]!
 }
@@ -51,4 +66,5 @@ type Post {
   content: String!
   author: User
   picture: Picture!
+  status:PostStatus
 }
