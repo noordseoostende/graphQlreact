@@ -25,7 +25,7 @@ type Animal {
 
 type Query {
   agent(id: ID!): User!
-  agents(name: String, age: Int): User!
+  agents(name: String, age: Int): [User!]!
   posts: [Post!]!
   post(id: ID!): Post!
   pictures: [Picture!]!

@@ -75,6 +75,14 @@
       "picture": 1,
       "status": "DRAFT",
       "id": 7
+    },
+    {
+      "title": "Sommige uitdrukkingen",
+      "content": "Het wordt inhoud",
+      "author": 1,
+      "picture": 1,
+      "status": "DRAFT",
+      "id": 8
     }
   ],
   "pictures": [
