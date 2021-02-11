@@ -1,5 +1,5 @@
 import { GraphQLServer } from 'graphql-yoga';
-import { Query, Mutation, User, Post, Picture } from './graphql/resolvers/index';
+import { Query, Mutation, User, Post, Picture, AnimalInterface } from './graphql/resolvers/index';
 
 
 
@@ -11,10 +11,11 @@ const server = new GraphQLServer({
       Mutation,
       User,
       Post,
-      Picture
+      Picture,
+      AnimalInterface
 
 }});
 
 server.start(() => {
-  console.log('And running running');
+  console.log('Het werkt goed');
 })

@@ -25,6 +25,25 @@ post:async(parent,args,context,info)=>{
 pictures:async(parent,args,context,info)=>{
   const response = await axios.get(`${db}/pictures`);
   return response.data
+},
+getAnimal:async(parent,args,context,info)=>{
+  let response = { dog:null, cat:null};
+  let random = Math.floor(Math.random()*6)+1;
+
+  if(random > 3){
+    response = {
+      animal:'DOG',
+      name:'Captain',
+      hair:'lots'
+    }
+  } else {
+    response = {
+      animal:'CAT',
+      name:'Nibelung',
+      hair:'sharp'
+    }
+  }
+  return response;
 }
 }
 const Mutation = {
@@ -112,10 +131,25 @@ const Picture = {
 }
 }
 
+const AnimalInterface = {
+  __resolveType(obj,context,info){
+      if(obj.animal == 'DOG'){
+          
+          return 'Dog';
+      }
+      if(obj.animal == 'CAT'){
+        
+        return 'Cat';
+    }
+    return null
+  }
+}
+
 export {
   Query,
   Mutation,
   Post,
   User,
-  Picture
+  Picture,
+  AnimalInterface
 }
